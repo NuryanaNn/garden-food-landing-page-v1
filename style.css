@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;500;600;700&display=swap');
+
+body{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .navbar{
+    padding: 1rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header li{
+    margin-right: 30px;
+}
+
+header ul a{
+    text-decoration: none;
+    color: black;
+}
+
+header .bars{
+    width: 40px;
+    height: 5px;
+    background-color: #3c6501;
+    margin-bottom: 6px;
+}
+
+.touch{
+    padding: 10px 20px;
+    background-color: #3c6501;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .burger{
+    display: none;
+}
+
+/* Hero Section */
+.hero{
+    padding: 2rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+}
+
+.hero .heroText{
+    max-width: 800px;
+}
+
+.hero .heroText h3{
+    font-size: 30px;
+}
+
+.hero .heroText span{
+    color: #3c6501;
+}
+
+.hero .heroText h1{
+    font-size: 70px;
+    margin: 15px 0;
+}
+
+.hero .heroText p{
+    margin-bottom: 20px;
+}
+
+.hero .heroImg{
+    max-width: 800px;
+}
+
+.hero .heroImg img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Service */
+.service{
+    padding: 5rem 4%;
+    background-color: #3c6501;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service .card{
+    width: 350px;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.service .card i{
+    font-size: 40px;
+}
+
+.service .card h2{
+    margin: 20px 0;
+}
+
+.service .card:hover{
+    background-color: #fff;
+    color: black;
+    transition: .5s;
+}
+
+/* Features */
+.features{
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+    align-items: center;
+}
+
+.features .featuresText{
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+.features .featuresText h3{
+    font-size: 30px;
+    color: #3c6501;
+}
+
+.features .featuresText h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.features .featuresText p{
+    color: #a09392;
+    margin-bottom: 20px;
+}
+
+/* product */
+.product{
+    padding: 4rem 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product .productText{
+    max-width: 600px;
+}
+
+.product .productText h3{
+    font-size: 30px;
+    color: #3c6501;
+}
+
+.product .productText h1{
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.product .productText ul{
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.product .productText li{
+    margin-right: 30px;
+    border: 1px solid #3c6501;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #3c6501;
+}
+
+/* Explore Service */
+.explore{
+    padding: 4rem 4%;
+}
+
+.explore .exploreTitle{
+    text-align: center;
+}
+
+.explore .exploreTitle h3{
+    color: #3c6501;
+    font-size: 30px;
+}
+
+.explore .exploreTitle h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.exploreContent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    margin-top: 70px;
+}
+
+.exploreContent .card{
+    width: 370px;
+    box-shadow: -1px 6px 35px -8px rgba(0,0,0,0.66);
+}
+
+.exploreContent .card .cardImg{
+    width: 100%;
+    height: 250px;
+}
+
+.exploreContent .card .cardImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.exploreContent .card .cardText{
+    padding: 10px;
+}
+
+.exploreContent .card h3{
+    font-size: 25px;
+}
+
+.exploreContent .card p{
+    margin: 15px 0;
+    color: #a09392;
+    font-weight: lighter;
+}
+
+.exploreContent .card button{
+    padding: 10px 20px;
+    border: none;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.exploreContent .card button::before{
+    content: '\f061';
+    font: var(--fa-font-solid);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+    background-color: #3c6501;
+    bottom: -35px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.exploreContent .card:hover button::before{
+    bottom: 0;
+}
+
+.portfolioBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.portfolioBtn button{
+    padding: 20px 25px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    background-color: #3c6501;
+    cursor: pointer;
+}
+
+/* Counter section */
+.counter{
+    padding: 4rem 4%;
+    background-image: url('themex-counter.jpg');
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter .card{
+    width: 250px;
+    background-color: #4d8200;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.counter .card h3{
+    font-size: 40px;
+}
+
+.counter .card p{
+    font-size: 25px;
+}
+
+/* Member */
+.member{
+    padding: 4rem 4%;
+}
+
+.member .memberTitle{
+    text-align: center;
+}
+
+.member .memberTitle h3{
+    color: #4d8200;
+    font-size: 30px;
+}
+
+.member .memberTitle h1{
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.memberContent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.memberContent .card{
+    width: 270px;
+    text-align: center;
+}
+
+.memberContent .card ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.memberContent .card li{
+    margin-right: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 9px 12px;
+}
+
+.memberContent .card a{
+    color: #000;
+}
+
+.memberContent .card li:hover a{
+    color: #fff;
+}
+
+.memberContent .card li:hover{
+    background-color: #3c6501;
+    transition: .5s;
+}
+
+.memberContent .card p{
+    margin-top: 10px;
+    color: #a09392;
+}
+
+/* Upcoming */
+.upcoming{
+    background-image: url(themex-slider-png.png);
+    padding: 4rem 4%;
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.upcoming .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.upcoming .upcomingText{
+    z-index: 10;
+    position: relative;
+    color: #fff;
+    max-width: 700px;
+    text-align: center;
+}
+
+.upcoming .upcomingText h3{
+    font-size: 35px;
+}
+
+.upcoming .upcomingText h1{
+    font-size: 50px;
+}
+
+.upcoming .upcomingText p{
+    margin: 15px 0;
+}
+
+/* Portfolio */
+.portfolio{
+    margin-top: 60px;
+    padding: 4rem 4%;
+}
+
+.portfolio .portfolioTitle{
+    text-align: center;
+}
+
+.portfolio .portfolioTitle h3{
+    color: #4d8200;
+    font-size: 30px;
+}
+
+.portfolio .portfolioTitle h1{
+    font-size: 50px;
+}
+
+.portfolio .portfolioCategory ul{
+    list-style: none;
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.portfolio .portfolioCategory ul li{
+    margin-right: 20px;
+}
+
+.portfolio .portfolioCategory button{
+    padding: 10px 20px;
+    border: 1px solid #a09392;
+    cursor: pointer;
+}
+
+.portfolio .portfolioCategory button:hover{
+    background-color: #4d8200;
+    transition: .5s;
+    color: #fff;
+}
+
+.portfolio .portfolioContent{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio .portfolioContent .card{
+    width: 280px;
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio .portfolioContent .card img{
+    width: 100%;
+}
+
+.portfolioContent .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(77, 130, 0, .3);
+    color: #fff;
+    visibility: hidden;
+}
+
+.portfolioContent .card i,
+.portfolioContent .card h3,
+.portfolioContent .card p{
+    font-size: 25px;
+}
+
+.portfolioContent .card:hover .overlay{
+    visibility: visible;
+}
+
+/* Fresh */
+.freshFood{
+    padding: 4rem 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.freshFood .bigFresh{
+    max-width: 500px;
+}
+
+.freshFood .bigFresh h4{
+    color: #4d8200;
+    font-size: 30px;
+}
+
+.freshFood .bigFresh h1{
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+.freshFood .bigFresh p{
+    color: #a09392;
+    margin-top: 20px;
+}
+
+.freshFood .bigFresh button{
+    margin-top: 40px;
+}
+
+.freshFood .smallFresh .card{
+    display: flex;
+    align-items: center;
+}
+
+.freshFood .smallFresh ul{
+    list-style: none;
+}
+
+.freshFood .smallFresh li{
+    margin-bottom: 40px;
+}
+
+.freshFood .smallFresh .card .icons{
+    margin-right: 25px;
+    font-size: 40px;
+    color: #4d8200;
+}
+
+.freshFood .smallFresh .card h3{
+    font-size: 35px;
+}
+
+.freshFood .smallFresh .card p{
+    color: #a09392;
+    margin-top: 10px;
+}
+
+/* Subscribe */
+.subscribe{
+    padding: 4rem 4%;
+    color: #fff;
+    background-color: #4d8200;
+    display: flex;
+    justify-content: space-around;
+}
+
+.subscribe .subscribeText{
+    max-width: 500px;
+}
+
+.subscribe .subscribeText h1{
+    font-size: 40px;
+}
+
+.subscribe .subscribeText p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.subscribe .inputBx{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe .inputBx input{
+    padding: 20px;
+    width: 450px;
+    border: none;
+    outline: none;
+}
+
+.subscribe .inputBx button{
+    padding: 20px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+/* Footer */
+footer{
+    background-image: url(themex-footer-image.jpg);
+    margin-top: 30px;
+    padding: 4rem 4%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    max-width: 250px;
+}
+
+.footer p{
+    margin: 30px 0;
+}
+
+.footer i{
+    margin-right: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+@media (max-width:980px) {
+    .navigation{
+        display: none;
+    }
+
+    header .burger{
+        display: block;
+    }
+
+    .hero{
+        flex-wrap: wrap;
+    }
+
+    .hero .heroText h1{
+        font-size: 35px;
+    }
+
+    .service{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .features{
+        flex-wrap: wrap-reverse;
+        row-gap: 40px;
+    }
+
+    .features .featuresImg,
+    .featuresImg img,
+    .productImg,
+    .productImg img{
+        width: 100%;
+    }
+
+    .product{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .explore .exploreTitle h1{
+        font-size: 30px;
+    }
+
+    .explore .exploreContent{
+        justify-content: space-around;
+    }
+
+    .explore .exploreContent .card{
+        width: 300px;
+    }
+
+    .counter{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .member .memberContent{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 40px;
+    }
+
+    .portfolioContent{
+        flex-wrap: wrap;
+    }
+
+    .portfolio .portfolioContent .card{
+        width: 300px;
+    }
+
+    .portfolioCategory{
+        display: none;
+    }
+
+    .portfolio .portfolioContent{
+        row-gap: 30px;
+    }
+
+    .portfolio .portfolioContent .card{
+        width: 350px;
+    }
+
+    .freshFood{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+   
+
+    .freshFood .bigFresh h1{
+        font-size: 35px;
+    }
+
+    .subscribe{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .subscribe .inputBx input{
+        width: 250px;
+    }
+    
+    footer{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    
+}
+
+
+
+
+@media (max-width:480px) {
+    .navigation{
+        display: none;
+    }
+
+    .hero{
+        flex-wrap: wrap;
+    }
+
+    .hero .heroText h1{
+        font-size: 35px;
+    }
+
+    header .burger{
+        display: 
+        block;
+    }
+
+    .service{
+        flex-wrap: wrap;
+    }
+
+    .features{
+        flex-wrap: wrap-reverse;
+        row-gap: 40px;
+    }
+
+    .features .featuresImg,
+    .featuresImg img,
+    .productImg,
+    .productImg img{
+        width: 100%;
+    }
+
+    .product{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .explore .exploreTitle h1{
+        font-size: 30px;
+    }
+
+    .counter{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .member .memberContent{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 40px;
+    }
+
+    .portfolioContent{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolioCategory{
+        display: none;
+    }
+
+    .portfolio .portfolioContent .card{
+        width: 400px;
+    }
+
+    .freshFood{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .freshFood .bigFresh h1{
+        font-size: 35px;
+    }
+
+    .subscribe{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .subscribe .inputBx input{
+        width: 250px;
+    }
+    
+    footer{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    
+}
